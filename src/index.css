@@ -1,0 +1,27 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0f;
+  --bg2: #111118;
+  --accent: #7c6dfa;
+  --accent2: #00e5c3;
+  --text: #e8e8f0;
+  --muted: #7a7a9a;
+  --border: rgba(124, 109, 250, 0.18);
+  --card: rgba(26, 26, 36, 0.85);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Syne', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: 'Syne', sans-serif; }
+img { max-width: 100%; display: block; }
+input, textarea { font-family: 'Syne', sans-serif; }
