@@ -44,7 +44,7 @@ const Hero = () => {
   }, [charIndex, isDeleting, textIndex])
 
   return (
-    <section className="hero" id="home">
+    <section className="hero container" id="home">
       <div className="hero-bg"></div>
       <div className="hero-grid"></div>
 

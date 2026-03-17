@@ -17,7 +17,7 @@ const techStack = [
 const About = () => {
   return (
     <section className="about" id="about">
-      <div className="about-inner">
+      <div className="about-inner container" >
         <div className="section-label">// About Me</div>
         <h2 className="section-title">
           Who I <span>Am</span>

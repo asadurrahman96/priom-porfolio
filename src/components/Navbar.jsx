@@ -20,34 +20,38 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="navbar-logo">
-        &lt;Asadur /&gt;
-      </div>
+  <div className="container" style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%'}}>
+    
+    <div className="navbar-logo">
+      &lt;Asadur /&gt;
+    </div>
 
-      <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
-        {navLinks.map((link) => (
-          <li key={link.label}>
-            <a href={link.href} onClick={() => setMenuOpen(false)}>
-              {link.label}
-            </a>
-          </li>
-        ))}
-      </ul>
+    <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
+      {navLinks.map((link) => (
+        <li key={link.label}>
+          <a href={link.href} onClick={() => setMenuOpen(false)}>
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
 
-      <a href="#contact" className="navbar-hire-btn">
-        Hire Me
-      </a>
+    <a href="#contact" className="navbar-hire-btn">
+      Hire Me
+    </a>
 
-      <button
-        className="navbar-hamburger"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle menu"
-      >
-        <span className={menuOpen ? 'open' : ''}></span>
-        <span className={menuOpen ? 'open' : ''}></span>
-        <span className={menuOpen ? 'open' : ''}></span>
-      </button>
-    </nav>
+    <button
+      className="navbar-hamburger"
+      onClick={() => setMenuOpen(!menuOpen)}
+      aria-label="Toggle menu"
+    >
+      <span className={menuOpen ? 'open' : ''}></span>
+      <span className={menuOpen ? 'open' : ''}></span>
+      <span className={menuOpen ? 'open' : ''}></span>
+    </button>
+
+  </div>
+</nav>
   );
 };
 
