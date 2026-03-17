@@ -1,0 +1,116 @@
+.about {
+  padding: 6rem 2.5rem;
+  background: var(--bg2);
+}
+
+.about-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: 0.6rem;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.section-title span { color: var(--accent); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-image-frame {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 3/4;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.about-image:hover { transform: scale(1.04); }
+
+.about-resume-btn {
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+}
+
+.about-text p {
+  color: var(--muted);
+  line-height: 1.85;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.about-text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.about-tech { margin-top: 2rem; }
+
+.about-tech-title {
+  font-size: 0.78rem;
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: 1rem;
+}
+
+.about-tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-badge {
+  font-size: 0.72rem;
+  padding: 5px 12px;
+  border-radius: 100px;
+  background: rgba(124,109,250,0.1);
+  color: var(--accent);
+  border: 1px solid rgba(124,109,250,0.22);
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.04em;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.tech-badge:hover {
+  background: rgba(124,109,250,0.2);
+  border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .about { padding: 4rem 1.2rem; }
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-image-frame { max-width: 220px; }
+}
